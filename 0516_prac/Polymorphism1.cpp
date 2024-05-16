@@ -16,22 +16,22 @@
 
 using namespace std;
 
-class Snack{
+class Snack {
 protected: // Snack, Candy, Chocolate 클래스 접근 가능
-    string name; // 종류
+    string category; // 종류
     float price; // 가격
     string productName; // 상품이름
     string manufacturer; // 제조사
 
 public:
-    Snack(string name, float price, string productName, string manufacturer)
-        : name(name), price(price), productName(productName), manufacturer(manufacturer) {}
+    Snack(string category, float price, string productName, string manufacturer)
+        : category(category), price(price), productName(productName), manufacturer(manufacturer) {}
 
-    string getName() { // protected로 선언된 name에 접근 가능하게 해줌
-        return name;
+    string getCategory() { // protected로 선언된 category에 접근 가능하게 해줌
+        return category;
     }
 
-    string getProductName() {
+    string getProductName() { // protected로 선언된 productName에 접근 가능하게 해줌
         return productName;
     }
 };
@@ -54,8 +54,7 @@ public:
         : Snack("Chocolate", price, productName, manufacturer), shape(shape) {}
 };
 
-int main()
-{
+int main() {
     Candy candy_1("sour", 200, "Bear", "mm");
     Candy candy_2("sweet", 150, "Smile", "ss");
     Chocolate chocolate_1("round", 1000, "Coin", "ww");
@@ -63,11 +62,11 @@ int main()
 
     Snack* snackBasket[4] = { &candy_1, &candy_2, &chocolate_1, &chocolate_2 };
 
-    cout << "[Snack Basket]" << endl;
+    cout << "[Snack Basket -- Category : Product Name]\n" << endl;
+
     for (int i = 0; i < 4; i++) {
-        cout << i + 1 << ". " << snackBasket[i]->getName() << " : " << snackBasket[i]->getProductName() << endl;
+        cout << i + 1 << ". " << snackBasket[i]->getCategory() << " : " << snackBasket[i]->getProductName() << endl;
     }
 
     return 0;
-	
 }

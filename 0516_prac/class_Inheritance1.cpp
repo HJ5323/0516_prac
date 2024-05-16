@@ -22,7 +22,8 @@ protected: // Rectangle, Triangle 접근 가능
     float height; // 높이
 
 public:
-   Shape(float num_sides, float base_length, float height) : num_sides(num_sides), base_length(base_length), height(height) {}
+   Shape(float num_sides, float base_length, float height) 
+       : num_sides(num_sides), base_length(base_length), height(height) {}
 
     void printInfo() {
         cout << "변의 개수: " << num_sides << endl;
