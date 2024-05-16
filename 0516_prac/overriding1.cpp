@@ -26,9 +26,7 @@ public:
     }
 
     void printInfo() {
-        cout << "변의 개수: " << num_sides << endl;
-        cout << "밑변 길이: " << base_length << endl;
-        cout << "높이: " << height << endl;
+        cout << "넓이는 { " << base_length * height << " }" << endl;
     }
 };
 
@@ -79,8 +77,10 @@ int main() {
     Triangle triangle(3, 7);
 
     rectangle.printInfo();
-
     triangle.printInfo();
+
+    rectangle.Shape::printInfo();
+    triangle.Shape::printInfo();
 
     return 0;
 }

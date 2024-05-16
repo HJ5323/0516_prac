@@ -21,7 +21,7 @@
     <ClCompile Include="class_Inheritance1-1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="override1.cpp">
+    <ClCompile Include="overriding1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
