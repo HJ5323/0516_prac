@@ -24,5 +24,8 @@
     <ClCompile Include="overriding1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="overloading1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
