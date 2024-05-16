@@ -18,5 +18,11 @@
     <ClCompile Include="class_Inheritance1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="class_Inheritance1-1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="override1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
