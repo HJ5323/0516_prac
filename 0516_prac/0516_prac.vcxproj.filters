@@ -27,10 +27,10 @@
     <ClCompile Include="overloading1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="overloading1-1.cpp">
+    <ClCompile Include="abstract class1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="추상 클래스.cpp">
+    <ClCompile Include="Polymorphism1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

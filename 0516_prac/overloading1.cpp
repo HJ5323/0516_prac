@@ -18,14 +18,8 @@ public:
     // 기본 생성자
     Shape() {}
 
-    void setting(float num_sides, float base_length, float height) {
-        this->num_sides = num_sides;
-        this->base_length = base_length;
-        this->height = height;
-    }
-
     void printInfo() {
-        cout << "넓이는 { }" << endl;
+        cout << "[넓이]" << endl;
     }
 };
 
@@ -35,10 +29,7 @@ private: // Rectangle에서만 사용 가능
 
 public:
     // 생성자
-    Rectangle()
-        : Rec_height(height) {
-        setting(4, base_length, height);
-    }
+    Rectangle() {}
 
     float area() {
         return base_length * Rec_height;
@@ -54,7 +45,7 @@ public:
 
         cout << "\n사각형의 넓이는 { " << area() << " }" << endl;
     }
-// printInfo(), printInfo(int w, int h) 두 개가 있어야 오버로딩이라고 한다
+    // printInfo(), printInfo(int w, int h) 두 개가 있어야 오버로딩이라고 한다
 };
 
 class Triangle : public Shape {
@@ -63,10 +54,7 @@ private: // Triangle에서만 사용 가능
 
 public:
     // 생성자
-    Triangle()
-        : Tri_height(height) {
-        setting(3, base_length, height);
-    }
+    Triangle() {}
 
     float area() {
         return 0.5 * base_length * Tri_height;
@@ -76,7 +64,7 @@ public:
         cout << "[삼각형]" << endl;
     }
 
-    void printInfo(int w, int h) { 
+    void printInfo(int w, int h) {
         this->base_length = w;
         this->Tri_height = h;
 
@@ -86,7 +74,7 @@ public:
 };
 
 int main() {
-  
+
     int w, h;
 
     cout << "밑변의 길이를 입력하세요: ";

@@ -43,7 +43,7 @@ int main() {
     Rect rect;
     Triangle triangle;
 
-    cout << "도형의 이름:" << endl;
+    cout << "[도형의 이름]" << endl;
     circle.draw();
     rect.draw();
     triangle.draw();

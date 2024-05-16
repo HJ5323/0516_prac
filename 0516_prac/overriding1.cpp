@@ -79,8 +79,8 @@ int main() {
     rectangle.printInfo();
     triangle.printInfo();
 
-    rectangle.Shape::printInfo();
-    triangle.Shape::printInfo();
+    // rectangle.Shape::printInfo(); // Shape¿« printInfo
+    // triangle.Shape::printInfo();
 
     return 0;
 }
